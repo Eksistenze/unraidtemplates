@@ -8,7 +8,7 @@ This template installs the newest Red-DiscordBot in a convenient multi-arch cont
 
 Red is self hosted, fully modular Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!
 
-**The default set of modules includes and is not limited to:**
+The default set of modules includes and is not limited to:
 
 - Moderation features (kick/ban/softban/hackban, mod-log, filter, chat cleanup)
 - Trivia (lists are included and can be easily added)
@@ -20,11 +20,11 @@ Red is self hosted, fully modular Discord bot – meaning all features and comma
 - Admin automation (self-role assignment, cross-server announcements, mod-mail reports)
 - Customisable command permissions
 
-**Additionally, other [plugins](#plugins) (cogs) can be easily found and added from our growing
-community of cog repositories.**
+Additionally, other cogs (plugins) can be easily found and added from our growing community of cog repositories.
 
-GitHub Repository - PhasecoreX's Red Bot Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
-GitHub Repository - Cog-Creators/ Red-DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
+GitHub Repositories-
+PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
+Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 Cog Repository: https://index.discord.red/
 
@@ -35,9 +35,8 @@ Example to launch a new Red Bot in your Discord, and load the Audio Cog so you c
 4. Enable Persistent Intents
 5. Install the Template
 6. Invite the Bot to the server using the link generated and displayed in logs
-**Example: <p> = your chosen prefix**
+Example: <p> = your chosen prefix
 7. Load the Audio cog by sending a message to the bot on discord with: <p>load audio
 
 Check here for a list of audio commands, and more details:
-
 https://docs.discord.red/en/latest/cog_guides/audio.html#basic-audio-use
