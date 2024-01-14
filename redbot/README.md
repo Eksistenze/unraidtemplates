@@ -18,7 +18,9 @@ The default set of modules includes and is not limited to:
 
 Additionally, other cogs (plugins) can be easily found and added from our growing community of cog repositories.
 <br>
+<br>
 GitHub Repositories-
+<br>
 PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
 Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
