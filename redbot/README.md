@@ -4,7 +4,6 @@ This template installs the newest Red-DiscordBot in a convenient multi-arch cont
 
 Red is self hosted, fully modular Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!
 
-<pre>
 The default set of modules includes and is not limited to:
 
 - Moderation features (kick/ban/softban/hackban, mod-log, filter, chat cleanup)
@@ -18,13 +17,13 @@ The default set of modules includes and is not limited to:
 - Customisable command permissions
 
 Additionally, other cogs (plugins) can be easily found and added from our growing community of cog repositories.
-
+<br>
 GitHub Repositories-
 PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
 Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 Cog Repository: https://index.discord.red/
-
+<br>
 Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
 1. Create a new bot in the Discord Developer Portal: https://discord.com/developers/applications
 2. Create and Copy the Token for use in the template
@@ -34,7 +33,6 @@ Example to launch a new Red Bot in your Discord, and load the Audio Cog so you c
 6. Invite the Bot to the server using the link generated and displayed in logs
 Example: . = your chosen prefix
 7. Load the Audio cog by sending a message to the bot on discord with: .load audio
-
+<br>
 Check here for a list of audio commands, and more details:
 https://docs.discord.red/en/latest/cog_guides/audio.html#basic-audio-use
-</pre>pre>
