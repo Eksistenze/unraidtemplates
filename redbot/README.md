@@ -22,8 +22,11 @@ Additionally, other cogs (plugins) can be easily found and added from our growin
 GitHub Repositories-
 <br>
 PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
+<br>
 Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
+<br>
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
+<br>
 Cog Repository: https://index.discord.red/
 <br>
 Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
