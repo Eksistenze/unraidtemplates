@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support/>https://forums.unraid.net/topic/151206-support-community-applications-redbot/#comment-1353298</Support>
   <Project>https://github.com/PhasecoreX/docker-red-discordbot</Project>
   <Overview>The newest Red-DiscordBot in a convenient multi-arch container.  &#xD;
 &#xD;
