@@ -11,7 +11,7 @@
   <Project>https://github.com/PhasecoreX/docker-red-discordbot</Project>
   <Overview>The newest Red-DiscordBot in a convenient multi-arch container.  &#xD;
 &#xD;
-Red is a fully modular bot &#x2013; meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. This is a self-hosted bot &#x2013; meaning you will need to host and maintain your own instance. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!&#xD;
+Red is a fully modular, self hosted, Discord bot &#x2013; meaning all features and commands can be enabled/disabled to your liking, making it completely customizable.&#xD;
 &#xD;
 The default set of modules includes and is not limited to:&#xD;
 &#xD;
@@ -25,7 +25,8 @@ The default set of modules includes and is not limited to:&#xD;
     - Admin automation (self-role assignment, cross-server announcements, mod-mail reports)&#xD;
     - Customisable command permissions&#xD;
 &#xD;
-Additionally, other plugins (cogs) can be easily found and added from our growing community of cog repositories.</Overview>
+Additionally, other plugins (cogs) can be easily found and added from our growing community of cog repositories:&#xD;
+https://index.discord.red/</Overview>
   <Category>MediaServer:Music MediaServer:Other</Category>
   <WebUI/>
   <TemplateURL/>
@@ -33,12 +34,12 @@ Additionally, other plugins (cogs) can be easily found and added from our growin
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1705182865</DateInstalled>
+  <DateInstalled>1705252734</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/redbot" Mode="rw" Description="Location where all container configuration is stored." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redbot</Config>
-  <Config Name="TOKEN" Target="TOKEN" Default="" Mode="" Description="The bot token you want redbot to use.  Retrieve from the Discord Developer Portal." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="PREFIX" Target="PREFIX" Default="." Mode="" Description="The prefix you want redbot to use. You can specify more than one prefix by additionally using the environment variables PREFIX2, PREFIX3, PREFIX4, and PREFIX5." Type="Variable" Display="always" Required="true" Mask="false">.</Config>
-  <Config Name="TZ" Target="TZ" Default="America/Chicago" Mode="" Description="Specify a timezone. By default, this is UTC." Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+  <Config Name="DISCORD BOT TOKEN" Target="TOKEN" Default="" Mode="" Description="The Discord bot token you want redbot to use.  Retrieve from the Discord Developer Portal." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PREFIX" Target="PREFIX" Default="." Mode="" Description="The prefix you want redbot to respond to commands using. You can specify more than one prefix by additionally using the environment variables PREFIX2, PREFIX3, PREFIX4, and PREFIX5." Type="Variable" Display="always" Required="true" Mask="false">.</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="Specify a timezone. By default, this is UTC. Example: America/Chicago" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
