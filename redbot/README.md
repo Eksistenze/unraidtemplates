@@ -2,7 +2,7 @@ Welcome to the support page of the Red-DiscordBot V3 Community Applications temp
 
 This template installs the newest Red-DiscordBot in a convenient multi-arch container. 
 
-Red is self hosted, fully modular Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!
+Red is self hosted, fully modular, Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!
 
 The default set of modules includes and is not limited to:
 
