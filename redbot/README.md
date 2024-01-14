@@ -29,7 +29,6 @@ Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 <br>
 Cog Repository: https://index.discord.red/
 <br>
-<br>
 Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
 1. Create a new bot in the Discord Developer Portal: https://discord.com/developers/applications
 2. Create and Copy the Token for use in the template
