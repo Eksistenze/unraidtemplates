@@ -39,6 +39,7 @@ Example to launch a new Red Bot in your Discord, and load the Audio Cog so you c
 6. Invite the Bot to the server using the link generated and displayed in logs
 Example: . = your chosen prefix
 7. Load the Audio cog by sending a message to the bot on discord with: .load audio
-<br>
+
 Check here for a list of audio commands, and more details:
+<br>
 https://docs.discord.red/en/latest/cog_guides/audio.html#basic-audio-use
