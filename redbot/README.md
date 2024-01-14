@@ -1,8 +1,4 @@
-Welcome to the support page of the Red-DiscordBot V3 Community Applications template.  This Support Thread explains how to set up your Red-DiscordBot in Unraid.
-
-About Red-DiscordBot:
-
-This template simplifies installing Red-DiscordBot V3 in docker, on your Unraid server.  I am not afiliated with the project, I am simply making the author's terrific work easily accessible in Community Apps.
+Welcome to the support page of the Red-DiscordBot V3 Community Applications template.  This template simplifies installing Red-DiscordBot V3 in docker, on your Unraid server.  I am not afiliated with the project, I am simply making the author's terrific work easily accessible in Community Apps.
 
 This template installs the newest Red-DiscordBot in a convenient multi-arch container. 
 
