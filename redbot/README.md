@@ -18,6 +18,7 @@ The default set of modules includes and is not limited to:
 
 Additionally, other cogs (plugins) can be easily found and added from our growing community of cog repositories.
 
+
 GitHub Repositories-
 
 PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
@@ -27,6 +28,7 @@ Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 
 Cog Repository: https://index.discord.red/
+
 
 Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
 1. Create a new bot in the Discord Developer Portal: https://discord.com/developers/applications
