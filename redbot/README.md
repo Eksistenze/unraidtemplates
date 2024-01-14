@@ -24,8 +24,11 @@ Additionally, other cogs (plugins) can be easily found and added from our growin
 
 GitHub Repositories-
 PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
+
 Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
+
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
+
 Cog Repository: https://index.discord.red/
 
 Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
@@ -35,8 +38,8 @@ Example to launch a new Red Bot in your Discord, and load the Audio Cog so you c
 4. Enable Persistent Intents
 5. Install the Template
 6. Invite the Bot to the server using the link generated and displayed in logs
-Example: <p> = your chosen prefix
-7. Load the Audio cog by sending a message to the bot on discord with: <p>load audio
+Example: . = your chosen prefix
+7. Load the Audio cog by sending a message to the bot on discord with: .load audio
 
 Check here for a list of audio commands, and more details:
 https://docs.discord.red/en/latest/cog_guides/audio.html#basic-audio-use
