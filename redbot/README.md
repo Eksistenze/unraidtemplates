@@ -19,9 +19,9 @@ Additionally, other cogs (plugins) can be easily found and added from our growin
 <br>
 GitHub Repositories-
 <br>
-PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
-<br>
 Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
+<br>
+PhasecoreX's Docker Container: https://github.com/PhasecoreX/docker-red-discordbot
 <br>
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 <br>
