@@ -25,6 +25,8 @@ Cog-Creators Red DiscordBot: https://github.com/Cog-Creators/Red-DiscordBot
 <br>
 Docker Hub: https://hub.docker.com/r/jonasbonno/discordbot
 <br>
+Official Unraid Forum Support Thread: https://forums.unraid.net/topic/151206-support-community-applications-redbot/
+<br>
 Cog Repository: https://index.discord.red/
 <br>
 <br>
