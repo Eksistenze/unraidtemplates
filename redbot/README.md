@@ -30,16 +30,14 @@ Official Unraid Forum Support Thread: https://forums.unraid.net/topic/151206-sup
 Cog Repository: https://index.discord.red/
 <br>
 <br>
-Example to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc:
+Sample steps to launch a new Red Bot in your Discord, and load the Audio Cog so you can play music from youtube etc.  I will assume that your chosen prefix is <.>:
 1. Create a new bot in the Discord Developer Portal: https://discord.com/developers/applications
 2. Create and Copy the Token for use in the template
 3. Enable Administrator Permissions
 4. Enable Persistent Intents
 5. Install the Template
 6. Invite the Bot to the server using the link generated and displayed in logs
-Example: . = your chosen prefix
-<br>
-8. Load the Audio cog by sending a message to the bot on discord with: .load audio
+7. Load the Audio cog by sending a message to the bot on discord with: .load audio
 
 Check here for a list of audio commands, and more details:
 <br>
