@@ -1,10 +1,6 @@
 **Red-DiscordBot V3 Community Applications Template**
 
-Welcome to the support page of the Red-DiscordBot V3 Community Applications template.  This template simplifies installing Red-DiscordBot V3 in docker, on your Unraid server.  I am not afiliated with the project, I am simply making the author's terrific work easily accessible in Community Apps.
-
-This template installs the newest Red-DiscordBot in a convenient, multi-arch container. 
-
-Red is self hosted, fully modular, Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable. You can turn Red into an admin bot, music bot, trivia bot, new best friend or all of these together!
+Welcome to the support page of the Red-DiscordBot V3 Community Applications template.  This template installs the newest Red-DiscordBot in a convenient multi-arch container.  Red is self hosted, fully modular, Discord bot – meaning all features and commands can be enabled/disabled to your liking, making it completely customizable.
 
 The default set of modules includes and is not limited to:
 
