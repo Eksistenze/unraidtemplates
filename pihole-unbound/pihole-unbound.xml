@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>pihole-unbound</Name>
-  <Repository>cbcrowe/pihole-unbound:latest</Repository>
+  <Repository>mpgirro/pihole-unbound</Repository>
   <Registry>https://hub.docker.com/r/pihole/pihole/</Registry>
   <Network>swag</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/151542-support-community-applications-pihole-unbound/</Support>
-  <Project>https://github.com/chriscrowe/docker-pihole-unbound/tree/main</Project>
+  <Project>https://github.com/mpgirro/docker-pihole-unbound/</Project>
   <Overview>This Docker deployment runs both Pi-Hole and Unbound in a single container.&#xD;
 &#xD;
 The base image for the container is the official Pi-Hole container, with an extra build step added to install the Unbound resolver directly into to the container based on instructions provided directly by the Pi-Hole team.&#xD;
