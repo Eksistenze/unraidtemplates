@@ -1,47 +1,46 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>pihole-unbound</Name>
-  <Repository>mpgirro/pihole-unbound</Repository>
-  <Registry>https://hub.docker.com/r/pihole/pihole/</Registry>
-  <Network>swag</Network>
-  <MyIP/>
+  <Name>pihole-v6-unbound</Name>
+  <Repository>mpgirro/docker-pihole-unbound</Repository>
+  <Registry>https://hub.docker.com/r/pihole/pihole</Registry>
+  <Network>br0</Network>
+  <MyIP></MyIP>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/151542-support-community-applications-pihole-unbound/</Support>
   <Project>https://github.com/mpgirro/docker-pihole-unbound/</Project>
-  <Overview>This Docker deployment runs both Pi-Hole and Unbound in a single container.&#xD;
+  <Overview>This Docker deployment runs both Pi-Hole version 6 and Unbound in a single container.&#xD;
 &#xD;
-The base image for the container is the official Pi-Hole container, with an extra build step added to install the Unbound resolver directly into to the container based on instructions provided directly by the Pi-Hole team.&#xD;
-&#xD;
-FYI - This template will install the "one-container" version the developer has built. </Overview>
+The base image for the container is the official Pi-Hole docker container, with an extra build step added to install the Unbound resolver directly into to the container based on instructions provided directly by the Pi-Hole team.</Overview>
   <Category>Security: Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/TeddyTux/unraidtemplates/main/pihole-unbound/pihole.png</Icon>
-  <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped --hostname=piholeunbound</ExtraParams>
+  <Icon>https://raw.githubusercontent.com/Eksistenze/unraidtemplates/main/pihole-unbound/pihole.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped --hostname=piholev6unbound</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1705850469</DateInstalled>
+  <DateInstalled>1742302922</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Port 443" Target="443" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">443</Config>
-  <Config Name="Port 53 TCP" Target="53" Default="53" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">53</Config>
-  <Config Name="Port 53 UDP" Target="53" Default="53" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">53</Config>
-  <Config Name="Port 80" Target="80" Default="80" Mode="tcp" Description="Pihole web interface" Type="Port" Display="always" Required="true" Mask="false">80</Config>
-  <Config Name="Port 5335" Target="5335" Default="5335" Mode="tcp" Description="Enable unbound access on local server" Type="Port" Display="always" Required="false" Mask="false">5335</Config>
-  <Config Name="FTLCONF_LOCAL_IPV4" Target="FTLCONF_LOCAL_IPV4" Default="" Mode="" Description="Set to your server's LAN IP, used by web block modes and lighttpd bind address." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="Example: America/Chicago" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="WEBPASSWORD" Target="WEBPASSWORD" Default="pihole" Mode="" Description="http://pi.hole/admin password." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="WEBTHEME" Target="WEBTHEME" Default="default-auto" Mode="" Description="User interface theme to use." Type="Variable" Display="always" Required="false" Mask="false">default-auto</Config>
-  <Config Name="REV_SERVER" Target="REV_SERVER" Default="false" Mode="" Description="Enable DNS conditional forwarding for device name resolution" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
-  <Config Name="REV_SERVER_TARGET" Target="REV_SERVER_TARGET" Default="" Mode="rw" Description="If conditional forwarding is enabled, set the IP of the local network router" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="REV_SERVER_DOMAIN" Target="REV_SERVER_DOMAIN" Default="" Mode="" Description="If conditional forwarding is enabled, set the domain of the local network router" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="REV_SERVER_CIDR" Target="REV_SERVER_CIDR" Default="" Mode="" Description="If conditional forwarding is enabled, set the reverse DNS zone (e.g. 192.168.0.0/24)" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="PIHOLE_DNS_" Target="PIHOLE_DNS_" Default="127.0.0.1#5335" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1#5335</Config>
-  <Config Name="DNSSEC" Target="DNSSEC" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
-  <Config Name="DNSMASQ_LISTENING" Target="DNSMASQ_LISTENING" Default="single" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">single</Config>
-  <Config Name="Host Path for /config" Target="/config" Default="/mnt/user/appdata/pihole-unbound" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-unbound</Config>
-  <Config Name="/etc/pihole" Target="/etc/pihole" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole-unbound/etc_pihole-unbound</Config>
-  <Config Name="/etc/dnsmasq.d" Target="/etc/dnsmasq.d" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole-unbound/etc_pihole_dnsmasq-unbound</Config>
+  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP Web Interface Port" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS Web Interface Port" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Port 53 TCP" Target="53" Default="53" Mode="tcp" Description="Port 53 TCP/UDP used for DNS traffic" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="Port 53 UDP" Target="53" Default="53" Mode="udp" Description="Port 53 TCP/UDP used for DNS traffic" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="Unbound Port" Target="5335" Default="5335" Mode="tcp" Description="Used internally by PiHole to route DNS requests to unbound." Type="Port" Display="always" Required="true" Mask="false">5335</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Web Password" Target="FTLCONF_webserver_api_password" Default="" Mode="" Description="Not setting this will result in a random password being generated." Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Theme" Target="FTLCONF_webserver_interface_theme" Default="default-auto" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PiHole DNS servers" Target="FTLCONF_dns_upstreams" Default="127.0.0.1#5335" Mode="" Description="Set the DNS server(s) that Pi-hole uses seperated by semi-colons.  Since we are using unbound, should be set to 127.0.0.1#5335" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1#5335</Config>
+  <Config Name="DNSSEC" Target="FTLCONF_dns_dnssec" Default="" Mode="" Description="Set to true to enable DNSSEC.  Will add to logs." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="DNS Listening Mode" Target="FTLCONF_dns_listeningMode" Default="single" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">single</Config>
+  <Config Name="Host Path for /config" Target="/config" Default="/mnt/user/appdata/pihole-unbound" Mode="rw" Description="Appdata folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-unbound</Config>
+  <Config Name="/etc/pihole" Target="/etc/pihole" Default="/mnt/user/appdata/pihole-unbound/etc_pihole-unbound" Mode="rw" Description="Pi-hole v6 moves all configuration into this folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-unbound/etc_pihole-unbound</Config>
+  <Config Name="Enable /dnsmasq.d" Target="FTLCONF_misc_etc_dnsmasq_d" Default="false" Mode="" Description="Load custom user configuration files from /etc/dnsmasq.d/" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="/etc/dnsmasq.d" Target="/etc/dnsmasq.d" Default="/mnt/user/appdata/pihole-unbound/etc_pihole_dnsmasq-unbound" Mode="rw" Description="This path is no longer necessary.  Pi-hole V6 moves all config to the /etc/pihole/pihole.toml file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole-unbound/etc_pihole_dnsmasq-unbound</Config>
+  <Config Name="DNSMASQ Config Lines" Target="FTLCONF_misc_dnsmasq_lines" Default="" Mode="" Description="Use this to add dnsmasq config lines without adding .conf files.  Lines should be seperated with a semi-colon." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DHCP Server Port" Target="" Default="" Mode="udp" Description="Set to 67 if using Pi-hole as your DHCP server" Type="Port" Display="always" Required="false" Mask="false">67</Config>
+  <Config Name="NTP Server Port(Time)" Target="" Default="" Mode="udp" Description="Set to 123 if you are using Pi-hole as your NTP server and add--cap-add=SYS_TIME to Extra Parameters" Type="Port" Display="always" Required="false" Mask="false">123</Config>
+  <Config Name="Rev Server" Target="FTLCONF_dns_revServers" Default="false" Mode="" Description="Used to forward DNS requests to local records(router) for resolution.  Use the following format:&#13;&#10;true,192.168.0.0/24,192.168.0.1#53,lan" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir/>
 </Container>
