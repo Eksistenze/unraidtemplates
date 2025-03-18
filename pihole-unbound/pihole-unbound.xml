@@ -7,7 +7,7 @@
   <MyIP></MyIP>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/151542-support-community-applications-pihole-unbound/</Support>
+  <Support>https://forums.unraid.net/topic/188299-support-community-applications-pihole-v6-unbound/</Support>
   <Project>https://github.com/mpgirro/docker-pihole-unbound/</Project>
   <Overview>This Docker deployment runs both Pi-Hole version 6 and Unbound in a single container.&#xD;
 &#xD;
